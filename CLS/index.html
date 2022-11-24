@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Navbar -->
+    <nav class="nav container">
+      <a href="./index.html" class="nav__logo">
+        <img src="./images/logo.png" alt="Logo Empresa" class="logo_imagen">
+      </a>
+        
+      <ul class="nav__list texto-descripcion">
+        <li>
+          <form action="" class="nav__search">
+            <input type="text" placeholder="Buscar" class="nav__search-input">
+            <span class="nav__search-icon">
+              <img src="./images/Iconografía/icons8-búsqueda-50.png" class="icono" alt="Icono Buscar">
+            </span>
+          </form>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__list-link">Servicios</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__list-link">Especialidades</a>
+        </li>
+        <li class="nav__list-item">
+          <a href="#" class="nav__list-link">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="nav__list-item boton boton-blanco">Inicia Sesión</a>
+        </li>
+        <li>
+          <a href="#" class="nav__list-item boton boton-contraste">Regístrate</a>
+        </li>
+      </ul>
+        
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="hero container">
+      <div class="hero-izq">
+        <h1 class="titulo-h1">¿Necesitas un psicólogo?  Nosotros podemos ayudarte</h1>
+        <h2 class="titulo-h2">La primera consulta de diagnóstico es gratis</h2>
+        <button class="boton boton-contraste llamanos">Llamanos pulsando aquí</button>
+        <img src="./images/Picture1.png" alt="">
+      </div>
+      <div>
+        <form action="" class="form-contacto">
+          <h3 class="texto-descripcion">Si prefieres que te llamemos, rellena este formulario:</h3>
+          <input type="text" placeholder="Nombre" class="input">
+          <input type="text" placeholder="Teléfono" class="input">
+          <input type="text" placeholder="Código Postal" class="input">
+          <input type="text" placeholder="Email" class="input">
+          <textarea placeholder="Déjanos aquí tu mensaje" name="" id="" cols="30" rows="10"></textarea>
+          <div class="terminos-condiciones">
+            <input type="checkbox" name="terminos">
+            <span>Acepto Términos y condiciones</span>
+          </div>
+          <button class="boton boton-contraste">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

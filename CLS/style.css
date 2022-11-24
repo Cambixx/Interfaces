@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hind+Vadodara:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  /* Paleta de colores */
+
+  --Azul-oscuro: #014A56;
+  --Azul-turquesa: #0C8B9F;
+  --Azul-base: #43C6DB;
+  --Azul-claro: rgba(67, 198, 219, 0.25);
+  --Verde-base: #A4B825;
+  --Verde-medio: #C6DB43;
+  --Verde-claro: #E5EEA9;
+  --Contraste-base: #FF5209;
+  --Contraste-medio: #FF9D56;
+  --Contraste-Claro: #FFC9A2;
+  --Negro: #000000;
+  --Blanco: #FFFFFF;
+  --Gris-claro: #E6E6E6;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--Negro);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  border-radius: 16px;
+}
+
+/* Clases Reusables */
+
+.input {
+  border-radius: 24rem;
+}
+
+.icono {
+  width: 16px;;
+}
+
+.titulo-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 140%;
+}
+
+.titulo-h2 {
+  font-family: 'Gilda Display', serif;
+  font-size: 32px;
+  line-height: 140%;
+} 
+
+.texto-descripcion {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+.texto-tarjeta {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.boton {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 24rem;
+  padding: 8px 16px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: background-color .25s;
+}
+
+.boton-contraste {
+  background-color: var(--Contraste-base);
+  color: var(--Negro);
+  border: none;
+}
+
+.boton-contraste:hover {
+  background-color: var(--Contraste-Claro);
+}
+
+.boton-blanco {
+  background-color: var(--Blanco);
+  color: var(--Negro);
+  border: 1px solid var(--Negro);
+}
+
+.boton-blanco:hover {
+  background-color: var(--Gris-claro);
+}
+
+.container {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding: 16px 64px;
+}
+
+/* NavBar */
+
+.header {
+  position: relative;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--Azul-base);
+}
+
+.logo_imagen {
+  display: block;
+  width: 56px;
+}
+
+.nav__search {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 8px 16px;
+  border: 1px solid var(--Negro);
+  border-radius: 24rem;
+  background-color: var(--Blanco);
+}
+
+.nav__search:focus-within {
+  border-color: var(--Contraste-base);
+}
+
+.nav__search-icon {
+  display: inline-flex;
+}
+
+.nav__search-input {
+  border: none;
+  outline: none;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-size: 16px;
+}
+
+.nav__list-link {
+  display: inline-block;
+  padding: 16px;
+  color: var(--Negro);
+  font-weight: bold;
+  transition: color .3s;
+}
+
+.nav__list-link:hover {
+  color: var(--Contraste-base);
+}
+
+/* Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-izq {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-izq h1,
+.hero-izq h2 {
+  text-align: center;
+}
+
+.hero-izq button {
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+}
+
+.llamanos {
+  color: var(--Blanco);
+}
+
+.form-contacto {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--Azul-turquesa);
+}
+
+.form-contacto > * {
+  padding: 16px;
+  margin: 16px;
+}
+
+.terminos-condiciones {
+  text-align: center;
+}
+.form-contacto button {
+  color: var(--Blanco);
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}
+
+ 
+
+  
