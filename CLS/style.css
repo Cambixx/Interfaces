@@ -236,14 +236,16 @@ textarea {
 .especialidades {
   position: relative;
   padding-block: 64px;
+  margin-bottom: 96px;
 }
 
 .especialidades > img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
+  overflow: hidden;
 }
 
 .especialidades h1 {
@@ -287,4 +289,61 @@ textarea {
   width: 200px;
 }
 
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  margin-top: 64px;
+  background-color: var(--Azul-base);
+}
+
+.footer {
+  margin-bottom: 0;
+  padding-block: 24px;
+}
+
+footer h3 {
+  background-color: var(--Gris-claro);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 400;
+}
+
+.footer-izq img {
+  width: 64px;
+}
+
+.footer-izq h6 {
+  font-weight: normal;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-der h3 {
+  margin-bottom: 16px;
+}
+
+.footer-der img {
+  width: 32px;
+}
+
+.footer-izq,
+.footer-der {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-der div {
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  align-items: center;
+}
   
