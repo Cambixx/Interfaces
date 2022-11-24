@@ -110,6 +110,7 @@ textarea {
 .container {
   max-width: 1400px;
   margin-inline: auto;
+  margin-block: 24px;
   padding: 16px 64px;
 }
 
@@ -181,6 +182,7 @@ textarea {
 .hero {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
 .hero-izq {
@@ -229,6 +231,60 @@ textarea {
   margin-bottom: 24px;
 }
 
- 
+/* Especialidades */
+
+.especialidades {
+  position: relative;
+  padding-block: 64px;
+}
+
+.especialidades > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.especialidades h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cont-especialidades {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.cont-especialidades div {
+  width: 250px;
+  height: 250px;
+  padding: 16px;
+  background-color: var(--Blanco);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.cont-especialidades div:hover {
+  background-color: var(--Contraste-Claro);
+}
+
+.cont-especialidades h2 {
+  text-align: center;
+}
+
+.cont-especialidades img {
+  width: 200px;
+}
 
   
