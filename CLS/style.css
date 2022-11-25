@@ -31,6 +31,19 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 16px;   
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--Gris-claro);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--Azul-claro);
+  border-radius: 24px; 
+}
+
 a {
   text-decoration: none;
 }
@@ -127,6 +140,8 @@ textarea {
   align-items: center;
   justify-content: space-between;
   background-color: var(--Azul-base);
+  width: 100vw;
+  gap: 16px;
 }
 
 .logo_imagen {
@@ -155,6 +170,7 @@ textarea {
 .nav__search-input {
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .nav__list {
@@ -205,7 +221,11 @@ textarea {
   margin-inline: auto;
 }
 
-.llamanos {
+.hero-izq img {
+  width: auto;
+}
+
+.boton-llamanos {
   color: var(--Blanco);
 }
 
@@ -251,7 +271,7 @@ textarea {
   left: 0;
   width: 100%;
   z-index: -1;
-  overflow: hidden;
+
 }
 
 .especialidades h1 {
@@ -319,7 +339,7 @@ textarea {
   border: 2px solid var(--Azul-oscuro);
   border-radius: 8px;
   height: 250px;
-  width: 450px;
+  width: 400px;
   margin-inline: 24px;
 }
 
@@ -330,6 +350,8 @@ textarea {
   justify-content: center;
   align-items: center;
   background-color: var(--Gris-claro);
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
   padding: 16px;
 }
 
@@ -389,6 +411,11 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+  
+}
+
+.cont-tarj-pasos:hover .cont-img-pasos {
+  scale: 1.05;
 }
 
 .cont-img-pasos {
@@ -402,6 +429,7 @@ textarea {
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in-out;
 }
 
 .cont-img-pasos img {
@@ -416,8 +444,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  padding-bottom: 40px;
+  padding-top: 112px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -483,3 +510,31 @@ footer h3 {
   align-items: center;
 }
   
+@media screen and (max-width: 1300px){
+  
+  .nav__list {
+    column-gap: 8px;
+  }
+
+  /* Especialidades */
+
+
+  .cont-especialidades {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .especialidades > img {
+    height: 800px;
+  }
+
+  /* Servicios */
+
+  .tarjeta-serv {
+    border-radius: 8px;
+    height: 250px;
+    width: 350px;
+    margin-inline: 24px;
+  }
+  
+}
