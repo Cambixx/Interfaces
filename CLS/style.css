@@ -271,7 +271,7 @@ textarea {
 .cont-especialidades div {
   width: 250px;
   height: 250px;
-  padding: 16px;
+  padding:8px;
   background-color: var(--Blanco);
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
