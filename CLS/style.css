@@ -143,6 +143,7 @@ textarea {
   background-color: var(--Azul-base);
   width: 100vw;
   gap: 16px;
+  margin-top: 0;
 }
 
 .logo_imagen {
@@ -507,7 +508,7 @@ footer h3 {
   align-items: center;
 }
   
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1250px){
   
   .nav__list {
     column-gap: 8px;
