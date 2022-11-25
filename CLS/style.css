@@ -29,6 +29,7 @@
 body {
   color: var(--Negro);
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -221,10 +222,6 @@ textarea {
   margin-inline: auto;
 }
 
-.hero-izq img {
-  width: auto;
-}
-
 .boton-llamanos {
   color: var(--Blanco);
 }
@@ -411,7 +408,7 @@ textarea {
   justify-content: center;
   align-items: center;
   margin-top: 80px;
-  
+  cursor: pointer;
 }
 
 .cont-tarj-pasos:hover .cont-img-pasos {
@@ -469,7 +466,7 @@ footer {
 
 footer h3 {
   background-color: var(--Gris-claro);
-  padding: 8px 16px;
+  padding-inline: 16px;
   border-radius: 8px;
   font-weight: 400;
 }
@@ -514,6 +511,12 @@ footer h3 {
   
   .nav__list {
     column-gap: 8px;
+  }
+
+  /* Hero */
+
+  .hero-izq img {
+    width: 40vw;
   }
 
   /* Especialidades */
