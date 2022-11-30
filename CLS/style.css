@@ -1032,3 +1032,193 @@ footer h3 {
   font-size: 16px;
   line-height: 140%;
 }
+
+
+
+/*ESPECIALIDADES*/
+
+/*LAPTOP*/
+@media screen {
+  
+.tituloEspecialidad{
+  text-align: center;
+  padding: 100px;
+
+}
+
+.flexEspecialidades{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+
+.flexEspecialidades div:hover {
+  background-color: var(--Contraste-Claro);
+  animation: miAnimacion 2s ease 0s infinite;
+}
+
+.flexEspecialidades div {
+  width: 90%;
+  height: 300px;
+  padding:10px;
+  background-color: var(--Azul-claro);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;*/
+  justify-content:center;
+  transition: 0.2s ease-in-out;
+  margin: 5%;
+  
+}
+
+.tarjetaEspecialidad{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+}
+
+.flexEspecialidades img {
+  width: 80%;
+  align-items: center;
+  grid-column: 2/3;
+}
+
+}
+
+/*TABLET*/
+@media screen and (max-width: 992px){
+  
+  .tituloEspecialidad{
+    text-align: center;
+    padding: 80px;
+  
+  }
+
+  .flexEspecialidades{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  
+  
+  .flexEspecialidades div:hover {
+    background-color: var(--Contraste-Claro);
+    animation: miAnimacion 2s ease 0s infinite;
+  }
+  
+  .flexEspecialidades div {
+    width: 90%;
+    height: 300px;
+    padding:10px;
+    background-color: var(--Azul-claro);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin: 24px;
+
+  }
+  
+  .tarjetaEspecialidad{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    justify-self: center;
+  }
+
+  .flexEspecialidades img {
+    width: 80%;
+    align-items: center;
+    grid-column: 2/3;
+
+  }
+  
+  
+  
+  
+  }
+
+  /*MOBILE*/
+@media screen and (max-width: 575px){
+  
+  .tituloEspecialidad{
+    text-align: center;
+    padding: 64px;
+  
+  }
+  
+  .flexEspecialidades{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+  
+
+  .flexEspecialidades div:hover {
+    background-color: var(--Contraste-Claro);
+    animation: miAnimacion 2s ease 0s infinite;
+  }
+
+  .flexEspecialidades div {
+    width: 90%;
+    height: 400px;
+    padding:10px;
+    background-color: var(--Azul-claro);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .tarjetaEspecialidad{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    justify-self: center;
+  }
+
+  .tarjetaEspecialidad img {
+    width: 80%;
+    grid-column: 2/3;
+  }
+  
+  }
+
+
+@keyframes miAnimacion {
+  
+  0%, 100%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1, 1.1);
+  }
+
+}
+
+
+
