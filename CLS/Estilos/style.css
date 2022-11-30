@@ -33,7 +33,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 16px;   
+  width: 16px;
 }
 
 body::-webkit-scrollbar-track {
@@ -42,7 +42,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: var(--Azul-claro);
-  border-radius: 24px; 
+  border-radius: 24px;
 }
 
 a {
@@ -77,7 +77,7 @@ textarea {
   font-family: 'Gilda Display', serif;
   font-size: 32px;
   line-height: 140%;
-} 
+}
 
 .texto-descripcion {
   font-family: 'Hind Vadodara', sans-serif;
@@ -123,7 +123,7 @@ textarea {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 100vw;
   margin-inline: auto;
   margin-block: 24px;
   padding: 16px 64px;
@@ -315,6 +315,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
+  height: 500px;
   z-index: -1;
 
 }
@@ -555,9 +556,214 @@ footer h3 {
   padding: 8px;
   align-items: center;
 }
-  
+
+
+/*DEPRESION*/
+
+/* Sección 1 */
+.containertotal {
+  padding-inline: 0;
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--Gris-claro);
+  border-radius: 8px;
+}
+
+.contenedor-tarj-dep {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  margin: 32px;
+}
+
+.contenedor-tarj-dep img {
+  width: 200px;
+  height: 200px;
+  background-color: var(--Blanco);
+  border-radius: 8px;
+  margin: auto;
+}
+
+.desc-depresion {
+  margin-inline: 16px;
+}
+
+.boton-llamar-dep{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.boton-llamar-dep button {
+ color: var(--Blanco);
+}
+
+/* Sección 2 */
+
+.cont-profesionales {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-block: 128px;
+}
+
+.cont-profesionales > img {
+  position: absolute;
+  top: -64px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+}
+
+.cont-profesionales h2 {
+  text-align: center;
+  margin-inline: 24px;
+}
+
+.cont-profesionales button {
+  color: var(--Blanco);
+}
+
+.cont-personas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.cont-personas p {
+  text-align: center;
+}
+
+.cont-personas img {
+  width: 170px;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+}
+
+.cont-personas img:hover {
+  scale: 1.02;
+}
+ .personas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ }
+
+/* Seccion 3 */
+
+.container3{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: #014A56 solid 2px;
+  border-radius: 8px;
+  margin-inline: 32px;
+}
+
+.container3 button {
+  width: fit-content;
+  height: fit-content;
+  margin-inline: auto;
+  color: var(--Blanco);
+  background-color: var(--Azul-oscuro);
+  border: none;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog {
+  padding: 8px;
+  border-radius: 8px;
+  height: 150px;
+  background-color: var(--Gris-claro);
+}
+
+.container3 h2{
+  text-align: center;
+  padding-top: 16px;
+}
+
+.cuadro{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cuadro p{
+  padding: 16px;
+}
+
+.cuadro img {
+  height: 120px;
+  width: 100px;
+  border-radius: 8px;
+}
+
+
+
+/* Sección 4 */
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 48px;
+}
+
+.cont-exito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.exito {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--Azul-claro);
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+}
+
+.exito img {
+  position: absolute;
+  width: 150px;
+  top: -56px;
+  background-color: var(--Gris-claro);
+  border-radius: 50%;
+}
+
+.exito p {
+  text-align: center;
+  padding: 16px;
+}
+
+
 @media screen and (max-width: 1250px){
-  
+
   .nav__list {
     column-gap: 8px;
   }
@@ -588,428 +794,28 @@ footer h3 {
     width: 350px;
     margin-inline: 24px;
   }
-  
-}
 
+  /* Profesionales */
 
+  .cont-profesionales > img {
+    height: 550px;
+  }
 
+  /* Exito */
 
-
-/*DEPRESION*/
-
-
-.container1{
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  background-color: var(--Gris-claro);
-  border-radius: 8px;
-}
-
-.contenedor-tarj-dep {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  align-items: center;
-  margin: 16px;
-}
-
-.contenedor-tarj-dep img {
-  width: 200px;
-  height: 200px;
-  background-color: var(--Blanco);
-  border-radius: 8px;
-}
-
-.boton-llamar-dep{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-}
-
-.boton-llamar-dep button {
- color: var(--Blanco);
-}
-
-
-
-
-
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr,1fr;
-  grid-template-rows: minmax(auto, auto);
-  gap: 16px;
-  margin: 40px;
-}
-
-.personas1{
-  text-align: center;
-  
-  grid-column: 1/5;
-  
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  
+  .cont-exito {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 88px;
+  }
 
 }
-
-
-
-.personas2{
- grid-column: 1/2;
- 
- height: 250px;
- text-align: center;
-}
-
-.personas2 img:hover{
-  border: var(--Verde-base) solid 3px;
-  scale: 1.05;
-}
-.personas3{
- 
-  grid-column: 2/3;
-  text-align: center;
-}
-
-.personas3 img:hover{
-  border: var(--Verde-base) solid 3px;
-  scale: 1.05;
-}
-
-.personas4{
-  
-  grid-column: 3/4;
-  text-align: center;
-}
-
-.personas4 img:hover{
-  border: var(--Verde-base) solid 3px;
-  scale: 1.05;
-}
-.personas5{
-  
-  grid-column: 4/5;
-  text-align: center;
-}
-
-.personas5 img:hover{
-  border: var(--Verde-base) solid 3px;
-  scale: 1.05;
-}
-.personas6{
-  
-  grid-column: 1/5;
-  text-align: center;
-  padding-top: 8px;
-  text-align: center;
-}
-
-.personas6 button{
-  background-color: var(--Contraste-base);
-  color: var(--Blanco);
-  border: none;
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 24rem;
-  padding: 8px 16px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color .25s;
-  margin-bottom: 16px;
- 
-}
-
-.personas6 button:hover{
-  background-color: var(--Contraste-Claro);
-}
-
-.container2 img{
-  width: 170px;
-  border-radius: 100%;
-  margin-top: 32px;
-}
-
-.container3{
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr,1fr, 1fr;
-  grid-template-rows: minmax(auto, auto);
-  gap: 16px;
-  margin: 70px;
-  border: #014A56 solid 2px;
-  border-radius: 15px;
-  
-
-}
-
-.blogs1{
-  text-align: center;
-  grid-column: 1/4;
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  
-
-}
-
-
-.blogs2{
-  
-  grid-column: 1/2;
-  height: 100px;
-  background-color: var(--Gris-claro);
-  align-items: center;
-  border-radius: 15px;
-  margin-left: 24px;
-}
-
-.cuadro1{
-  
-  
-  display: flex;
-  align-items: center;
-  
-}
-.cuadro1 p{
-  margin-left: 16px;
-}
-
-.cuadro1 img{
-  border-radius: 10px;
-  padding-left: 24px;
-}
-
-
-.blogs3{
-  
-  grid-column: 2/3;
-  height: 100px;
-  background-color: var(--Gris-claro);
-  align-items: center;
-  border-radius: 15px;
-}
-
-
-.cuadro2{
-  
- 
-  display: flex;
-  align-items: center;
-  
-}
-
-.cuadro2 img{
-  border-radius: 10px;
-  height: 95px;
-  padding-left: 24px;
-}
-.cuadro2 p{
-  margin-left: 16px;
-}
-
-
-
-.blogs4{
-  
-  grid-column: 3/4;
-  height: 100px;
-  background-color: var(--Gris-claro);
-  align-items: center;
-  border-radius: 15px;
-  margin-right: 24px;
-}
-
-.cuadro3{
-  
- 
-  display: flex;
-  align-items: center;
-  
-}
-
-.cuadro3 p{
-  margin-left: 16px;
-}
-
-.cuadro3 img{
-  
-  padding-left: 24px;
-}
-
-.blogs5{
-  
-  grid-column: 1/4;
-  text-align: center;
-}
-
-.blogs5 button{
-  display: inline-block;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 24rem;
-  padding: 8px 16px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: background-color .25s;
-  background-color: var(--Azul-oscuro);
-  color: var(--Blanco);
-  position: relative;
-  top: 17px;
-  
-  z-index: 200;
-  
-}
-
-.blogs5 button:hover{
-  background-color: var(--Azul-turquesa);
-}
-
-
-
-.container4{
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr,1fr, 1fr,1fr;
-  grid-template-rows: minmax(auto, auto);
-  gap: 16px;
-  margin: 70px;
-  
-
-}
-
-.exito1{
-  text-align: center;
-  grid-column: 1/5;
-  
-  margin-bottom: 7%;
-
-}
-
-.exito1 h2{
-  font-family: 'Gilda Display', serif;
-  font-size: 32px;
-  line-height: 140%;
-  
-}
-
-
-
-.exito2{
-  
-  background-color: #43C6DB;
-  
-  text-align: center;
-}
-
-.exito2 img{
-  position: relative;
-  bottom: 50px;
-  background-color: var(--Gris-claro);
-  border-radius: 200px;
-  
-}
-
-.exito2 h3{
-  padding-bottom: 16px;
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-}
-.exito2 p{
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-
-.exito3{
-  
-  background-color: #43C6DB;
-  
-  text-align: center;
-}
-
-.exito3 img{
-  position: relative;
-  bottom: 50px;
-  background-color: var(--Gris-claro);
-  border-radius: 200px;
-  
-}
-
-.exito3 h3{
-  padding-bottom: 16px;
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-}
-.exito3 p{
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.exito4{
-  
-  background-color: #43C6DB;
-  
-  text-align: center;
-}
-
-.exito4 img{
-  position: relative;
-  bottom: 50px;
-  background-color: var(--Gris-claro);
-  border-radius: 200px;
-  
-}
-
-.exito4 h3{
-  padding-bottom: 16px;
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-}
-.exito4 p{
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.exito5{
-  
-  background-color: #43C6DB;
-  
-  text-align: center;
-}
-
-.exito5 img{
-  position: relative;
-  bottom: 50px;
-  background-color: var(--Gris-claro);
-  border-radius: 200px;
-  
-}
-
-.exito5 h3{
-  padding-bottom: 16px;
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 24px;
-  line-height: 140%;
-}
-.exito5 p{
-  font-family: 'Hind Vadodara', sans-serif;
-  font-size: 16px;
-  line-height: 140%;
-}
-
-
 
 /*ESPECIALIDADES*/
 
 /*LAPTOP*/
 @media screen {
-  
+
 .tituloEspecialidad{
   text-align: center;
   padding: 100px;
@@ -1047,7 +853,7 @@ footer h3 {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin: 5%;
-  
+
 }
 
 .tarjetaEspecialidad{
@@ -1067,7 +873,7 @@ footer h3 {
 
 /*TABLET*/
 @media screen and (max-width: 992px){
-  
+
   /* Nav */
 
   .nav__list {
@@ -1082,6 +888,7 @@ footer h3 {
     border-radius: 8px;
     transform: translateX(100%);
     transition: 0.3s linear;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
   .boton__menu-cerrar{
@@ -1105,7 +912,7 @@ footer h3 {
   .tituloEspecialidad{
     text-align: center;
     padding: 80px;
-  
+
   }
 
   /* Hero */
@@ -1131,6 +938,18 @@ footer h3 {
     height: 1300px;
   }
 
+  /* Profesionales */
+
+  .cont-personas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 128px;
+  }
+
+  .cont-profesionales > img {
+    height: 860px;
+  }
+
   .flexEspecialidades{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1141,12 +960,12 @@ footer h3 {
     margin-right: 10%;
     margin-bottom: 10%;
   }
-    
+
   .flexEspecialidades div:hover {
     background-color: var(--Contraste-Claro);
     animation: miAnimacion 2s ease 0s infinite;
   }
-  
+
   .flexEspecialidades div {
     width: 90%;
     height: 300px;
@@ -1163,7 +982,7 @@ footer h3 {
     margin: 24px;
 
   }
-  
+
   .tarjetaEspecialidad{
     display: grid;
     grid-template-columns: 1;
@@ -1176,8 +995,8 @@ footer h3 {
     align-items: center;
     grid-column: 2/3;
 
-  }  
-  
+  }
+
   /* Footer */
   footer h3 {
     width: min-content;
@@ -1186,10 +1005,9 @@ footer h3 {
 
   /*MOBILE*/
 @media screen and (max-width: 575px){
-  
 
   /* Especialidades Home */
-    
+
   .especialidades {
     margin-block: 164px;
     padding-top: 180px;
@@ -1197,7 +1015,7 @@ footer h3 {
   .cont-especialidades {
     grid-template-columns: 1fr;
   }
-  
+
   .especialidades > img {
     width: 1000px;
     height: 1600px;
@@ -1213,12 +1031,39 @@ footer h3 {
     height: 1340px;
   }
 
+  /* Profesionales */
+
+  .cont-personas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cont-profesionales > img {
+    top: -140px;
+    height: 1550px;
+    width: 1600px;
+  }
+
+  /* Blogs */
+
+  .blogs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Exito */
+
+  .cont-exito {
+    display: flex;
+    flex-direction: column;
+  }
+
   .tituloEspecialidad{
     text-align: center;
     padding: 64px;
-  
+
   }
-  
+
   .flexEspecialidades{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1226,7 +1071,7 @@ footer h3 {
     justify-items: center;
     align-items: center;
   }
-  
+
 
   .flexEspecialidades div:hover {
     background-color: var(--Contraste-Claro);
@@ -1259,12 +1104,12 @@ footer h3 {
     width: 80%;
     grid-column: 2/3;
   }
-  
+
 }
 
 
 @keyframes miAnimacion {
-  
+
   0%, 100%{
     transform: scale(1,1);
   }
