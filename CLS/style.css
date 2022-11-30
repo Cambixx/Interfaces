@@ -1070,11 +1070,11 @@ footer h3 {
   background-color: var(--Azul-claro);
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  /*display: flex;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  cursor: pointer;*/
-  justify-content:center;
+  cursor: pointer;
   transition: 0.2s ease-in-out;
   margin: 5%;
   
@@ -1091,6 +1091,7 @@ footer h3 {
   align-items: center;
   grid-column: 2/3;
 }
+
 
 }
 
