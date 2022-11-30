@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./Estilos/style.css">
+  <title>CLS</title>
 </head>
 <body>
   <!-- Header -->
@@ -17,6 +17,7 @@
       </a>
         
       <ul class="nav__list texto-descripcion">
+        <img class="boton__menu-cerrar" src="./images/Iconografía/icons8-eliminar-50.png" alt="">
         <li>
           <form action="" class="nav__search">
             <input type="text" placeholder="Buscar" class="nav__search-input">
@@ -41,6 +42,7 @@
           <a href="#" class="nav__list-item boton boton-contraste">Regístrate</a>
         </li>
       </ul>
+      <span class="nav__menu-icon"><img src="./images/Iconografía/icons8-menú-en-círculos-50.png" alt=""></span>
         
     </nav>
   </header>
@@ -56,19 +58,28 @@
         <img src="./images/Picture1.png" alt="imagen llámanos">
       </div>
       <div>
-        <form action="" class="form-contacto">
+        <form action="#" class="form-contacto">
           <h3 class="texto-descripcion">Si prefieres que te llamemos, rellena este formulario:</h3>
-          <input type="text" placeholder="Nombre" class="input">
-          <input type="text" placeholder="Teléfono" class="input">
-          <input type="text" placeholder="Código Postal" class="input">
-          <input type="text" placeholder="Email" class="input">
-          <textarea placeholder="Déjanos aquí tu mensaje" name="" id="" cols="30" rows="10"></textarea>
+          <input type="text" placeholder="Nombre" class="input input-nombre">
+          <input type="text" placeholder="Teléfono" class="input input-telefono">
+          <input type="text" placeholder="Código Postal" class="input input-cPostal">
+          <input type="text" placeholder="Email" class="input input-email">
+          <textarea placeholder="Déjanos aquí tu mensaje" name="" id="" cols="30" rows="10" class="input-mensaje"></textarea>
           <div class="terminos-condiciones">
-            <input type="checkbox" name="terminos">
-            <span>Acepto Términos y condiciones</span>
+            <input type="checkbox" name="terminos" class="input-check">
+            <span>Acepto Términos y condiciones</span><br>
+            <span class="mensaje-tyc"></span>
           </div>
-          <button class="boton boton-contraste">Enviar</button>
+          <button type="submit" class="boton boton-contraste boton-enviar">Enviar</button>
         </form>
+      </div>
+      <div class="vEmergente">
+        <div class="cont-vEmergente">
+          <img class="boton-cerrar" src="./images/Iconografía/icons8-eliminar-50.png" alt="">
+          <img src="./images/gracias.png" alt="">
+          <h2>Muchas Gracias!</h2>
+          <p>En breve nos pondremos en contacto contigo</p>
+        </div>
       </div>
     </section>
 
@@ -192,7 +203,6 @@
     </div>
   </footer>
 
-
-  <script src="script.js"></script>
+  <script src="./JS/script.js"></script>
 </body>
 </html>

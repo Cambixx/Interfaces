@@ -151,6 +151,14 @@ textarea {
   width: 56px;
 }
 
+.nav__menu-icon {
+  display: none;
+}
+
+.boton__menu-cerrar {
+  display: none;
+}
+
 .nav__search {
   display: flex;
   align-items: center;
@@ -199,6 +207,7 @@ textarea {
 /* Hero */
 
 .hero {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
@@ -255,6 +264,46 @@ textarea {
   margin-bottom: 24px;
 }
 
+.vEmergente {
+  background-color: var(--Azul-claro);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+}
+
+.cont-vEmergente {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background-color: var(--Blanco);
+  width: 600px;
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.vEmergente.activo {
+  display: initial;
+}
+
+.cont-vEmergente .boton-cerrar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  scale: 0.7;
+  cursor: pointer;
+  margin: 8px;
+}
 /* Especialidades */
 
 .especialidades {
@@ -1094,10 +1143,42 @@ footer h3 {
 
 
 }
-
+/* !------------------------------------fsdffs */
 /*TABLET*/
 @media screen and (max-width: 992px){
   
+  .nav__list {
+    position: relative;
+    flex-direction: column;
+    position: absolute;
+    top: 0;right: 0;
+    z-index: 100;
+    background-color: var(--Gris-claro);
+    padding-block: 112px 32px;
+    padding-inline: 32px;
+    border-radius: 8px;
+    transform: translateX(100%);
+    transition: 0.3s linear;
+  }
+
+  .boton__menu-cerrar{
+    display: initial;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 24px;
+    transform: scale(0.6);
+  }
+
+  .nav__list.activo {
+    transform: translateX(0);
+  }
+
+  .nav__menu-icon {
+    display: initial;
+    transform: scale(0.8);
+  }
+
   .tituloEspecialidad{
     text-align: center;
     padding: 80px;
