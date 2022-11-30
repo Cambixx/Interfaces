@@ -219,6 +219,7 @@ textarea {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  gap: 24px;
 }
 
 .hero-izq h1,
@@ -309,7 +310,7 @@ textarea {
 .especialidades {
   position: relative;
   padding-block: 64px;
-  margin-bottom: 144px;
+  margin-block: 144px;
 }
 
 .especialidades > img {
@@ -428,7 +429,7 @@ textarea {
 
 .empezar {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .fondo {
@@ -519,6 +520,7 @@ footer h3 {
   padding-inline: 16px;
   border-radius: 8px;
   font-weight: 400;
+  text-align: center;
 }
 
 .footer-izq img {
@@ -1143,10 +1145,12 @@ footer h3 {
 
 
 }
-/* !------------------------------------fsdffs */
+
 /*TABLET*/
 @media screen and (max-width: 992px){
   
+  /* Nav */
+
   .nav__list {
     position: relative;
     flex-direction: column;
@@ -1185,6 +1189,29 @@ footer h3 {
   
   }
 
+  /* Hero */
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* Servicios Home */
+
+  .cont-tarj-serv {
+    grid-template-columns: 1fr;
+  }
+
+  /* Empezar es así de fácil */
+
+  .contenedor-pasos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fondo {
+    height: 1300px;
+  }
+
   .flexEspecialidades{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1195,8 +1222,7 @@ footer h3 {
     margin-right: 10%;
     margin-bottom: 10%;
   }
-  
-  
+    
   .flexEspecialidades div:hover {
     background-color: var(--Contraste-Claro);
     animation: miAnimacion 2s ease 0s infinite;
@@ -1231,16 +1257,43 @@ footer h3 {
     align-items: center;
     grid-column: 2/3;
 
+  }  
+  
+  /* Footer */
+  footer h3 {
+    width: min-content;
   }
-  
-  
-  
-  
-  }
+}
 
   /*MOBILE*/
 @media screen and (max-width: 575px){
   
+
+  /* Especialidades Home */
+    
+  .especialidades {
+    margin-block: 164px;
+    padding-top: 180px;
+  }
+  .cont-especialidades {
+    grid-template-columns: 1fr;
+  }
+  
+  .especialidades > img {
+    width: 1000px;
+    height: 1600px;
+  }
+
+  .especialidades > h1 {
+    margin-bottom: 32px;
+  }
+
+  /* Empezar es así de fácil */
+
+  .fondo {
+    height: 1340px;
+  }
+
   .tituloEspecialidad{
     text-align: center;
     padding: 64px;
@@ -1288,7 +1341,7 @@ footer h3 {
     grid-column: 2/3;
   }
   
-  }
+}
 
 
 @keyframes miAnimacion {
