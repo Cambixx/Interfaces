@@ -82,10 +82,4 @@ botonMenuCerrar.addEventListener('click', () => {
   menuNav.classList.toggle('activo')
 })
 
-//ESTO NO FUNCIONA :(
-botonEspecialidades.addEventListener('click', () => {
-  window.location = "./PaginasWeb/depresion"
-  location.href="./PaginasWeb/depresion";
-
-})
 
