@@ -609,7 +609,7 @@ footer h3 {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  margin-block: 128px;
+  margin-block: 256px;
 }
 
 .cont-profesionales > img {
@@ -666,6 +666,7 @@ footer h3 {
   border: #014A56 solid 2px;
   border-radius: 8px;
   margin-inline: 32px;
+  margin-bottom: 160px;
 }
 
 .container3 button {
@@ -979,6 +980,10 @@ footer h3 {
 
   /* Profesionales */
 
+  .cont-profesionales {
+    margin-block: 256px 296px;
+  }
+
   .cont-personas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -986,7 +991,7 @@ footer h3 {
   }
 
   .cont-profesionales > img {
-    height: 860px;
+    height: 920px;
   }
   /* Blogs */
 
@@ -1052,7 +1057,7 @@ footer h3 {
     height: 1340px;
   }
 
-  /* Página Depresión */
+  /* PÁGINA DEPRESIÓN */
 
   /* Profesionales */
 
