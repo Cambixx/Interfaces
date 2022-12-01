@@ -216,10 +216,9 @@ textarea {
 .hero-izq {
   display: flex;
   flex-direction: column;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 64px;
 }
 
 .hero-izq h1,
@@ -334,7 +333,8 @@ textarea {
 
 }
 
-.cont-especialidades div {
+.cont-especialidades a {
+  color: var(--Negro);
   width: 250px;
   height: 250px;
   padding:8px;
@@ -349,7 +349,7 @@ textarea {
   transition: 0.2s ease-in-out;
 }
 
-.cont-especialidades div:hover {
+.cont-especialidades a:hover {
   background-color: var(--Contraste-Claro);
 }
 
@@ -557,8 +557,7 @@ footer h3 {
   align-items: center;
 }
 
-
-/*DEPRESION*/
+/*PÁGINA DEPRESION*/
 
 /* Sección 1 */
 .containertotal {
@@ -716,8 +715,6 @@ footer h3 {
   border-radius: 8px;
 }
 
-
-
 /* Sección 4 */
 
 .container4 {
@@ -761,6 +758,92 @@ footer h3 {
   padding: 16px;
 }
 
+/*PAG ESPECIALIDADES*/
+
+.cont-pag-especialidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 128px;
+}
+
+.tituloEspecialidad{
+  text-align: center;
+  padding: 100px;
+}
+
+.flexEspecialidades{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 64px;
+}
+
+
+.tarjetaEspecialidad:hover {
+  background-color: var(--Contraste-Claro);
+  
+}
+
+.tarjetaEspecialidad:hover > div {
+  animation: miAnimacion 2s ease-in-out 0s infinite;
+}
+
+.tarjetaEspecialidad{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 500px;
+  background-color: var(--Azul-claro);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.tarjetaEspecialidad > div {
+  display: grid;
+  place-content: center;
+  background-color: var(--Gris-claro);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.tarjetaEspecialidad img {
+  width: 200px;
+  padding: 8px;
+}
+
+.tarjetaEspecialidad h2 {
+  text-align: center;
+  color: var(--Negro);
+}
+
+.tarjetaEspecialidad h5 {
+  text-align: center;
+  color: var(--Negro);
+}
+
+/* PÁGINA 404 */
+
+.cont-pag-construccion {
+  display: grid;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 80px;
+}
+
+.cont-pag-construccion img {
+  filter: hue-rotate(330deg);
+  scale: 1.4;
+}
 
 @media screen and (max-width: 1250px){
 
@@ -808,66 +891,6 @@ footer h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 88px;
   }
-
-}
-
-/*ESPECIALIDADES*/
-
-/*LAPTOP*/
-@media screen {
-
-.tituloEspecialidad{
-  text-align: center;
-  padding: 100px;
-
-}
-
-.flexEspecialidades{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 10%;
-}
-
-
-.flexEspecialidades div:hover {
-  background-color: var(--Contraste-Claro);
-  animation: miAnimacion 2s ease 0s infinite;
-}
-
-.flexEspecialidades div {
-  width: 90%;
-  height: 300px;
-  padding:10px;
-  background-color: var(--Azul-claro);
-  border-radius: 8px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  margin: 5%;
-
-}
-
-.tarjetaEspecialidad{
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
-}
-
-.flexEspecialidades img {
-  width: 80%;
-  align-items: center;
-  grid-column: 2/3;
-}
-
 
 }
 
@@ -919,6 +942,7 @@ footer h3 {
 
   .hero {
     grid-template-columns: 1fr;
+    gap: 64px;
   }
 
   /* Servicios Home */
@@ -937,6 +961,21 @@ footer h3 {
   .fondo {
     height: 1300px;
   }
+ 
+  /* PÁGINA DEPRESIÓN */
+
+  .contenedor-tarj-dep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .desc-depresion h2,
+  .desc-depresion p {
+    text-align: center;
+  }
 
   /* Profesionales */
 
@@ -949,55 +988,37 @@ footer h3 {
   .cont-profesionales > img {
     height: 860px;
   }
+  /* Blogs */
+
+  .blogs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Página Especialidades */
 
   .flexEspecialidades{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
+    grid-template-columns: 1fr;
   }
 
-  .flexEspecialidades div:hover {
-    background-color: var(--Contraste-Claro);
-    animation: miAnimacion 2s ease 0s infinite;
+  /* Éxito */
+
+  .cont-exito {
+    column-gap: 24px;
+    row-gap: 128px;
   }
 
-  .flexEspecialidades div {
-    width: 90%;
+  .exito {
     height: 300px;
-    padding:10px;
-    background-color: var(--Azul-claro);
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    margin: 24px;
-
+    width: 250px;
   }
-
-  .tarjetaEspecialidad{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-    justify-self: center;
+  
+  .exito img {
+    width: 120px;
+    top: -66px;
   }
-
-  .flexEspecialidades img {
-    width: 80%;
-    align-items: center;
-    grid-column: 2/3;
-
-  }
-
-  /* Footer */
+ 
+  /* FOOTER */
   footer h3 {
     width: min-content;
   }
@@ -1031,6 +1052,8 @@ footer h3 {
     height: 1340px;
   }
 
+  /* Página Depresión */
+
   /* Profesionales */
 
   .cont-personas {
@@ -1044,13 +1067,6 @@ footer h3 {
     width: 1600px;
   }
 
-  /* Blogs */
-
-  .blogs {
-    display: flex;
-    flex-direction: column;
-  }
-
   /* Exito */
 
   .cont-exito {
@@ -1058,63 +1074,32 @@ footer h3 {
     flex-direction: column;
   }
 
-  .tituloEspecialidad{
-    text-align: center;
-    padding: 64px;
-
-  }
-
-  .flexEspecialidades{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-
-
-  .flexEspecialidades div:hover {
-    background-color: var(--Contraste-Claro);
-    animation: miAnimacion 2s ease 0s infinite;
-  }
-
-  .flexEspecialidades div {
-    width: 90%;
-    height: 400px;
-    padding:10px;
-    background-color: var(--Azul-claro);
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-
+  /* Página Especialidades */
+  
   .tarjetaEspecialidad{
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-    justify-self: center;
+    width: 300px;
+    height: 400px;
+    padding: 24px;
   }
-
+  
+  .tarjetaEspecialidad > div {
+    width: 150px;
+    height: 150px;
+  }
+  
   .tarjetaEspecialidad img {
-    width: 80%;
-    grid-column: 2/3;
+    width: 100px;
   }
-
 }
 
 
 @keyframes miAnimacion {
 
   0%, 100%{
-    transform: scale(1,1);
+    transform: scale(1);
   }
   50%{
-    transform: scale(1.1, 1.1);
+    transform: scale(1.03);
   }
 
 }

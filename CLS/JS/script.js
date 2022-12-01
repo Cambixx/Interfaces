@@ -23,49 +23,50 @@ botonEnviar.addEventListener('click', () => {
     setTimeout(() => {
       inputNombre.style.color = 'black'
       inputNombre.value = ''
-    }, 2000);
+    }, 1500);
   }else if (inputTelefono.value == '' ) {
     inputTelefono.style.color = 'red'
     inputTelefono.value = 'El campo debe estar relleno'
     setTimeout(() => {
       inputTelefono.style.color = 'black'
       inputTelefono.value = ''
-    }, 2000);
+    }, 1500);
   }else if (inputCPostal.value == '' ) {
     inputCPostal.style.color = 'red'
     inputCPostal.value = 'El campo debe estar relleno'
     setTimeout(() => {
       inputCPostal.style.color = 'black'
       inputCPostal.value = ''
-    }, 2000);
+    }, 1500);
   }else if (inputEmail.value == '' ) {
     inputEmail.style.color = 'red'
     inputEmail.value = 'El campo debe estar relleno'
     setTimeout(() => {
       inputEmail.style.color = 'black'
       inputEmail.value = ''
-    }, 2000);
+    }, 1500);
   }else if (inputMensaje.value == '' ) {
     inputMensaje.style.color = 'red'
     inputMensaje.value = 'El campo debe estar relleno'
     setTimeout(() => {
       inputMensaje.style.color = 'black'
       inputMensaje.value = ''
-    }, 2000);
+    }, 1500);
   }else if (!inputCheck.checked) {
     mensajeTyC.style.color = 'red'
     mensajeTyC.textContent = 'Debe aceptar términos y condiciones'
     setTimeout(() => {
       mensajeTyC.textContent = ''
-    }, 2000);
+    }, 1500);
   }
   else{
-  vEmergente.classList.add('activo')
   inputNombre.value = ''
   inputTelefono.value = ''
   inputCPostal.value = ''
   inputEmail.value = ''
   inputMensaje.value = ''
+  inputCheck.checked = false
+  vEmergente.classList.add('activo')
   }
 })
 
