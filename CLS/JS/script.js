@@ -4,6 +4,7 @@ const vEmergente = document.querySelector('.vEmergente')
 const menuNav = document.querySelector('.nav__list')
 const menuIcon = document.querySelector('.nav__menu-icon')
 const botonMenuCerrar = document.querySelector('.boton__menu-cerrar')
+const botonEspecialidades = document.querySelector('.botonEspecialidades')
 
 const inputNombre = document.querySelector('.input-nombre')
 const inputTelefono = document.querySelector('.input-telefono')
@@ -80,6 +81,10 @@ botonMenuCerrar.addEventListener('click', () => {
   menuNav.classList.toggle('activo')
 })
 
+//ESTO NO FUNCIONA :(
+botonEspecialidades.addEventListener('click', () => {
+  window.location = "./PaginasWeb/depresion"
+  location.href="./PaginasWeb/depresion";
 
-
+})
 
