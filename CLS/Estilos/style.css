@@ -763,12 +763,17 @@ footer h3 {
   width: 300px;
 }
 
+.exito:hover img {
+  transform: translateY(-8px);
+}
+
 .exito img {
   position: absolute;
   width: 150px;
   top: -56px;
   background-color: var(--Gris-claro);
   border-radius: 50%;
+  transition: 0.2s ease-in-out;
 }
 
 .exito p {
