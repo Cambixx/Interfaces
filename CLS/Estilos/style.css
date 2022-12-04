@@ -129,6 +129,8 @@ textarea {
   padding: 16px 64px;
 }
 
+/* HOME */
+
 /* NavBar */
 
 .header {
@@ -461,7 +463,7 @@ textarea {
 }
 
 .cont-tarj-pasos:hover .cont-img-pasos {
-  scale: 1.05;
+  transform: translateY(-4px);
 }
 
 .cont-img-pasos {
@@ -534,12 +536,22 @@ footer h3 {
   gap: 24px;
 }
 
+.iconos-redes img {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.iconos-redes img:hover {
+  scale: 1.1;
+}
+
 .footer-der h3 {
   margin-bottom: 16px;
 }
 
 .footer-der img {
   width: 32px;
+  transition: 0.2s ease-in-out;
 }
 
 .footer-izq,
@@ -555,6 +567,11 @@ footer h3 {
   gap: 16px;
   padding: 8px;
   align-items: center;
+  cursor: pointer;
+}
+
+.footer-der div:hover img {
+  scale: 1.1;
 }
 
 /*PÁGINA DEPRESION*/
